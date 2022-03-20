@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-pinot" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-apache-pinot-{{ version }}.tar.gz
-  sha256: 9dc2e8cbe83f4d624477961445608ee96512bbefd7f1c558c7304b8c2c00ac0d
+  sha256: a950eddeefc481fe72b76d4be5932f8f38454112f37f8366604da53d3e3a8731
 
 build:
   number: 0
