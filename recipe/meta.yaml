@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-pinot" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-apache-pinot-{{ version }}.tar.gz
-  sha256: 9dc2e8cbe83f4d624477961445608ee96512bbefd7f1c558c7304b8c2c00ac0d
+  sha256: 9f2c4f42cbe37e634f34440cdc165ee57a9be466413d7b592e9b34b979347878
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -35,9 +35,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Apache Pinot for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-apache-pinot package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-apache-pinot/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
