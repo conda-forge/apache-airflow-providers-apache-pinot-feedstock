@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-pinot" %}
-{% set version = "4.5.0" %}
+{% set version = "4.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_pinot-{{ version }}.tar.gz
-  sha256: 53979ac1e91d4fab4d179af2c3dee97c0208b7106ef7e2b1b4997dfa17e26b56
+  sha256: 2ba51221dc3a0ea0809c1a11f25dd605fbb0957e10bf09fe2c31c785f636df63
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<4.dev0
-    - apache-airflow-providers-common-sql >=1.14.1
+    - apache-airflow-providers-common-sql >=1.20.0
     - apache-airflow >=2.8.0
     - pinotdb >=5.1.0
 
