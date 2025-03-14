@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-pinot" %}
-{% set version = "4.6.0" %}
+{% set version = "4.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_pinot-{{ version }}.tar.gz
-  sha256: 212ae76950940c72ea851c94a446e959602cb082d1f4b54fd0b1e3e08591fc3f
+  sha256: 0e3c5db3d82524a8b48f341cacd3174ed4aa9fc20faf9948cf254faebeca9400
 
 build:
   noarch: python
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow-providers-common-sql >=1.20.0
     - apache-airflow >=2.9.0
+    - apache-airflow-providers-common-sql >=1.20.0
     - pinotdb >=5.1.0
 
 test:
@@ -38,7 +38,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-apache-pinot for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/apache/pinot/LICENSE
+  license_file: src/airflow/providers/apache/pinot/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-apache-pinot/stable/index.html
   dev_url: https://github.com/apache/airflow/
