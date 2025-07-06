@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-apache-pinot" %}
-{% set version = "4.8.0" %}
+{% set version = "4.8.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_pinot-{{ version }}.tar.gz
-  sha256: 309b1aa5fd5fbbbdf1ab0c9945448739b19574a79a61c29dc9f5ad6138a22639
+  sha256: 7c3dc8a8727f98e6d179665e9b2cceb2860380ccfdfb8177914aa4e53676448b
 
 build:
   noarch: python
