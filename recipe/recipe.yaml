@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-pinot
-  version: "4.9.1"
+  version: "4.9.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_pinot-${{ version }}.tar.gz
-  sha256: b09c2a40e6600ce13ea26924bcc32f1324b2b44bcaf883fe6ff6d71e06d75aca
+  sha256: c80f9bcc6dc4ac47c2ee40e129ca00ad9ccdc6dbc330580f243c89d73bdc44b2
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-      - airflow.providers.apache.pinot
+        - airflow.providers.apache.pinot
       pip_check: true
       python_version: ${{ python_min }}.*
 
