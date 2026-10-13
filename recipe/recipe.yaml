@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-pinot
-  version: "4.10.3"
+  version: "4.10.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_pinot-${{ version }}.tar.gz
-  sha256: e4b5b341e059fa8e59b83727ca4234a816fddeece11c74ffab5aa9c930abb4ee
+  sha256: 29624b7fd25364ec34ba8a6a61bee8df6e57f0a7c6f307208c5f2372f45cbdc9
 
 build:
   noarch: python
